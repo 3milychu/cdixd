@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light theme</title>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<!-- Embed styles in pages individually -->
+<style>
+html, body {
+	background-color:#FAE0DD;
+	color:#121212;
+	font-family: 'Libre Franklin', sans-serif;
+}
+
+.logo {
+	position:fixed;
+	top:0;
+	left:0;
+	margin:3%;
+}
+
+.logo h1 {
+	font-size:1em;
+	font-weight:400;
+}
+
+.switch {
+	position:absolute;
+	top:0;
+	right:0;
+	margin:2%;
+	border-radius:1em;
+	padding:0.1% 2%;
+	border:0.05em solid #121212;
+	background-color:#FAE0DD;
+}
+
+.switch h2{
+	font-size:1em;
+	font-weight:700;
+}
+
+.message {
+	position:absolute;
+	left:0;
+	bottom:0;
+	margin:2%;
+}
+
+.message h1 {
+	font-size:3em;
+}
+
+h1 em {
+    color: #FAE0DD;
+    -webkit-text-stroke: 2px #121212;
+    display: block;
+    font-style: normal;
+    font-size:2em;
+}
+
+.main {
+	width:100%;
+	height:100vh;
+	text-align:center;
+}
+
+.hero {
+	width:35%;
+	margin:auto;
+}
+
+.shape img {
+	width: 5em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10%;
+}
+
+.hero img {
+	width:100%;
+}
+
+.main p {
+	position: absolute;
+    top: 25%;
+    right: 0;
+    margin: 10%;
+}
+
+a{
+	color:#121212;
+}
+
+</style>
+
+<body>
+
+<div class='main'>
+	<div class='shape'>
+		<img src="assets/light/shape.png">
+	</div>
+	<div class='hero'>
+		<img src="assets/light/hero.png">
+	</div>
+	<p>Some paragraph text here</p>
+</div>
+
+<div class='logo'>
+	<h1>Logo</h1>
+</div>
+
+<a href="dark.html">
+	<div class='switch'>
+	<h2>Switch to dark mode</h2>
+	</div>
+</a>
+
+
+<div class='message'>
+	<h1>Hello, we're<em>Non-Linear</em></h1>
+</div>
+
+
+</body>
+</html> 
