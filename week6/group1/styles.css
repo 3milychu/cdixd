@@ -1,0 +1,41 @@
+html, body {
+	width:100%;
+	margin:0;
+	top:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+#main {
+	width:90%;
+	margin:1% 3%;
+}
+#featured-flex, #titles-flex, #panels-flex {
+	display:inline-flex;
+	width:100%;
+	margin:auto;
+}
+#featured-flex img {
+	width:96%;
+	margin:2%;
+}
+#titles-flex {
+	height:30vh;
+}
+#titles-flex img {
+	flex-grow:1;
+	flex-basis:auto;
+	width:20%;
+	margin:2%;
+	height:auto;
+}
+#panels-flex {
+	height:55vh;
+}
+#panels-flex img {
+	flex-grow:1;
+	flex-basis:auto;
+	width:20%;
+	margin:2%;
+	height:auto;
+}

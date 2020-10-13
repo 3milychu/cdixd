@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid</title>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+html, body {
+	width:100%;
+	top:0;
+	left:0;
+	margin:auto;
+	font-family: 'Press Start 2P', cursive;
+}
+.grid {
+	display:grid;
+	grid-template-columns:6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25% 6.25%;
+	grid-template-rows:12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh 12.5vh;
+}
+.grid div {
+	border:0.01em solid black;
+}
+#a {
+	grid-column: 1 / 9;
+	grid-row: 1 / 9;
+	font-size:16vw;
+}
+#b {
+	grid-column: 9 / 17;
+	grid-row: 1 / 5;
+	font-size:5vw;
+}
+#b, #g {
+	text-align:right;
+	vertical-align:bottom;
+}
+h2 {
+	transform:rotate(90deg);
+	transform-origin: right top;
+}
+#b h2 {
+	margin-top:45vh;
+}
+#g h2 {
+	margin-top:12vh;
+}
+#c {
+	grid-column: 9 / 17;
+	grid-row: 5 / 9;
+	font-size:6vw;
+}
+#d {
+	grid-column: 13 / 17;
+	grid-row: 5 / 9;
+}
+#e {
+	grid-column: 13 / 17;
+	grid-row: 7 / 9;
+}
+#f {
+	grid-column: 13 / 15;
+	grid-row: 7 / 9;
+	font-size:3vw;
+}
+#g {
+    grid-column: 15 / 17;
+    grid-row: 7 / 8;
+}
+#h {
+	grid-column: 15 / 16;
+	grid-row: 8 / 9;
+	font-size:1vw;
+}
+</style>
+<body>
+
+<div class='grid'>
+	<div id='a'>pro</div>
+	<div id='b'><h2>por</h2></div>
+	<div id='c'>tion</div>
+	<div id='d'></div>
+	<div id='e'></div>
+	<div id='f'>pro</div>
+	<div id='g'><h2>por</h2></div>
+	<div id='h'>tion</div>
+</div>
+
+</body>
+</html>
