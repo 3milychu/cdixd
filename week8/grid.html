@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>12-column grid</title>
+</head>
+<style type="text/css">
+	html, body {
+		margin:0;
+		width:100%;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.section-grid {
+		display:grid;
+		width:100%;
+		grid-template-columns: 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw 6.8vw;  
+		margin:1.5vw;
+		column-gap: 1.5vw;
+		height:100vh;
+	}
+	.main {
+		background-color:#BACEDB;
+		grid-column: 1 / 9;
+		height:100%;
+	}
+	.side {
+		background-color:#DAE9F3;
+		grid-column: 9 / 13;
+		height:100%;
+	}
+	@media screen and (max-width:767px){
+		.section-grid {
+			grid-template-columns: 24% 24% 24% 24%;
+			grid-template-rows: 6.8% 6.8% 6.8% 6.8% 6.8% 6.8% 6.8% 6.8% 6.8% 6.8% 6.8% 6.8%;  
+			row-gap: 1.5vh;
+		}
+		.main {
+			grid-column: 1 / 5;
+			grid-row: 1 / 8;
+		}
+		.side {
+			grid-column: 1 / 5;
+			grid-row: 8 / 13;
+		}
+	}
+</style>
+<body>
+
+<div class='section-grid'>
+	<div class='main'></div>
+	<div class='side'></div>
+</div>
+
+</body>
+</html>

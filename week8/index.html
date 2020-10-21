@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>percentages</title>
+</head>
+<style type="text/css">
+	html, body {
+		width:100%;
+		margin:0;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+	}
+	.section {
+		width:98%;
+		height:100vh;
+		padding:1%;
+	}
+	.section div {
+		display:inline-block;
+	}
+	.main {
+		background-color:#BACEDB;
+		width:66vw;
+		height:100%;
+	}
+	.side {
+		background-color:#DAE9F3;
+		width:31vw;
+		height:100%;
+		float:right;
+	}
+	@media screen and (max-width:767px){
+		.main {
+			width:100%;
+			height:60%;
+			margin-bottom:0.5%;
+		}
+		.side {
+			width:100%;
+			height:40%;
+		}
+	}
+</style>
+<body>
+
+<div class='section'>
+	<div class='main'></div>
+	<div class='side'></div>
+</div>
+
+</body>
+</html>
